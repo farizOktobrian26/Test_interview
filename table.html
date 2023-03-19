@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<script type="text/javascript" src="table_script.js"></script>
+	</head>
+<body>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+	<th>Nama</th>
+    <th>Jenis Kelamin</th>
+    <th>Jabatan</th>
+    <th>Alamat</th>
+    <th>Agama</th>
+    <th>No.Hp</th>
+    <th>Email</th>
+    <th>Status Pernikahan</th>
+    <th>Total Gaji Akhir</th></tr>
+
+<tr id="row1">
+	<td id="name_row1">Rennala</td>
+	<td id="gender_row1">Female</td>
+	<td id="pos_row1">Manager</td>
+	<td id="address_row1">JL.Test1</td>
+	<td id="rel_row1">Islam</td>
+	<td id="phone_row1">0815779988</td>
+	<td id="email_row1">rennala@testo.com</td>
+	<td id="statusN_row1">Sudah Menikah</td>
+	<td id="sallary_row1">22jt</td>
+	<td>
+		<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+		<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+	</td>
+</tr>
+
+<tr id="row2">
+	<td id="name_row2">Ranni</td>
+	<td id="gender_row2">Female</td>
+	<td id="pos_row2">Officer</td>
+	<td id="address_row2">JL.Test3</td>
+	<td id="rel_row2">Islam</td>
+	<td id="phone_row2">0815774554</td>
+	<td id="email_row2">ranni@testo.com</td>
+	<td id="statusN_row2">Belum Menikah</td>
+	<td id="sallary_row2">7jt</td>
+	<td>
+		<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+		<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+	</td>
+</tr>
+
+<tr id="row3">
+	<td id="name_row3">Radagon</td>
+	<td id="gender_row3">Male</td>
+	<td id="pos_row3">Supervisor</td>
+	<td id="address_row3">JL.Test2</td>
+	<td id="rel_row3">Kristen</td>
+	<td id="phone_row3">0816998557</td>
+	<td id="email_row3">radagon@testo.com</td>
+	<td id="statusN_row3">Sudah Menikah</td>
+	<td id="sallary_row3">12jt</td>
+	<td>
+		<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+		<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+	</td>
+</tr>
+
+<tr>
+	<td><input type="text" id="new_name"></td>
+	<td><input type="text" id="new_gender"></td>
+	<td><input type="text" id="new_pos"></td>
+	<td><input type="text" id="new_address"></td>
+	<td><input type="text" id="new_rel"></td>
+	<td><input type="text" id="new_phone"></td>
+	<td><input type="text" id="new_email"></td>
+	<td><input type="text" id="new_statusN"></td>
+	<td><input type="text" id="new_sallary"></td>
+	<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+</html>
